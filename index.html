@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Andrii Levin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header-section">
+        <button id="theme-toggle" class="theme-toggle" type="button">Dark mode</button>
+
+        <h1>Andrii Levin</h1>
+        <p>Cybersecurity Student | SOC Analyst</p>
+
+        <address>
+            <p>Email: <a href="mailto:levinandrey33@gmail.com">levinandrey33@gmail.com</a></p>
+            <p>Phone: <a href="tel:+380682439345">+380682439345</a></p>
+            <p>Location: Lviv, Ukraine</p>
+        </address>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="https://www.linkedin.com/in/andrii-levin-746b03359/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                <li><a href="https://github.com/snappixd" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="https://t.me/rxmblw" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                <li><a href="https://tryhackme.com/p/rxmbl" target="_blank" rel="noopener noreferrer">TryHackMe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section id="summary" class="cyber-card">
+            <h2>Summary</h2>
+            <p>Cybersecurity student with hands-on internship experience in SOC alert triage, SIEM detection engineering (Splunk), AWS cloud security, and web application penetration testing. Backend development background in Go and Python; strong networking foundation.</p>
+        </section>
+
+        <section id="experience" class="cyber-card">
+            <h2>Work Experience</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>SOC Analyst</h3>
+                    <p><strong class="highlight">NDA</strong> | September 2026 - Present</p>
+                    <p>Monitoring, alert triage, and security operations.</p>
+                </li>
+                <li>
+                    <h3>Cybersecurity Intern</h3>
+                    <p><strong class="highlight">UnderDefense (Lviv)</strong> | February 2026 - September 2026</p>
+                    <p>Detection Engineering &amp; Cloud Security, SOC Operations, and Penetration Testing.</p>
+                </li>
+                <li>
+                    <h3>SOC / Security Operations Intern</h3>
+                    <p><strong class="highlight">Raiffeisen Bank (Remote)</strong> | July 2026 - November 2026</p>
+                    <p>Security Operations Fundamentals, Bank Infrastructure &amp; PKI.</p>
+                </li>
+                <li>
+                    <h3>Cybersecurity Trainee</h3>
+                    <p><strong class="highlight">SoftServe (Remote)</strong> | July 2026 - September 2026</p>
+                    <p>Defensive Security &amp; SIEM, Cloud Security, and Offensive Security Foundation.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education" class="cyber-card">
+            <h2>Education</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>Bachelor in Cybersecurity</h3>
+                    <p><strong class="highlight">Lviv Polytechnic National University</strong> | Sep 2025 - Present</p>
+                </li>
+                <li>
+                    <h3>Junior Bachelor in Computer Engineering</h3>
+                    <p><strong class="highlight">Khmelnytskyi Polytechnic Professional College</strong> | Sep 2021 - Jul 2025</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" class="cyber-card">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong class="highlight">Programming &amp; Databases:</strong> Go, Python, MongoDB, MySQL</li>
+                <li><strong class="highlight">Cloud &amp; Tools:</strong> AWS (CloudTrail, GuardDuty, S3, KMS), Git, Docker</li>
+                <li><strong class="highlight">Cybersecurity:</strong> Splunk, Suricata IDS/IPS, Burp Suite, Metasploit, Active Directory</li>
+                <li><strong class="highlight">Networking:</strong> TCP/IP, DNS, TLS/HTTPS, Wireshark, tcpdump</li>
+            </ul>
+        </section>
+
+        <section id="languages" class="cyber-card">
+            <h2>Languages</h2>
+            <ul>
+                <li>Ukrainian - Native Speaker</li>
+                <li>English - Basic</li>
+            </ul>
+        </section>
+
+        <section id="reviews" class="cyber-card">
+            <h2>Reviews</h2>
+            <div id="reviews-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andrii Levin</p>
+        <h3>System info</h3>
+        <ul id="system-info"></ul>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Зворотний зв'язок</h2>
+            <form action="https://formspree.io/f/xrpenldo" method="POST">
+                <label>Ім'я <input type="text" name="name" required></label>
+                <label>Email <input type="email" name="email" required></label>
+                <label>Телефон <input type="tel" name="phone" required></label>
+                <label>Повідомлення <textarea name="message" rows="4" required></textarea></label>
+                <div class="modal-actions">
+                    <button type="submit">Надіслати</button>
+                    <button id="modal-close" type="button">Закрити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
